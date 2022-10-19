@@ -13,6 +13,7 @@ const theme = {
   colors: {
     bg: '#e6faff',
     color: '#000',
+    border: '#00c7fa'
   },
   buttons: {
     bg: '#fff',

@@ -1,5 +1,4 @@
 
-// @ts-ignore
 import Styled from "styled-components"
 
 // @ts-ignore
@@ -18,9 +17,18 @@ padding:0rem 2rem;
 display: flex;
 justify-content: space-between;
 align-items:center;
+border:1px solid red;
 
 @media (max-width:${({ theme }) => theme.mobile}){
     flex-direction: column;
+    height: 5.5rem;
+
+    img{
+        margin-top:5px;
+    }
+    button{
+        margin-bottom: 10px;
+    }
 }
 `
 // @ts-ignore
@@ -48,22 +56,30 @@ export const Button = Styled.button`
 export const Flex = Styled.div`
 display:flex;
 width:100%;
+padding:2rem;
 `
 
 //Left
 // @ts-ignore
 export const Left = Styled.div`
 border:1px solid red;
-width:50%`
+width:50%;
+padding: 0rem 4rem ;
+`
 
 //right
 // @ts-ignore
 export const Right = Styled.div`
 border:1px solid blue;
+display:flex;
+align-items:start;
 width:50%;
 img{
     height:400px;
     width:300px;
+    &:hover{
+    transform:scale(0.98);
+    }
 }
 
 `
