@@ -1,17 +1,17 @@
 import React from 'react'
-import { CardContainer } from './StyledComponent/HeaderStyledComponent/Body.Styled';
+import { CardBody, CardContainer, CardHeader } from './StyledComponent/HeaderStyledComponent/Body.Styled';
 
 const ContentCard = ({ content }) => {
     console.log(content);
     return (
         <CardContainer layout={ content.id % 2 === 0 && 'row-reverse' }>
-            <header>
+            <CardHeader>
                 <h1>{ content.title }</h1>
                 <p>{ content.body }</p>
-            </header>
-            <div>
+            </CardHeader>
+            <CardBody>
                 <img src={ `./images/${content.image}` } alt={ content.title } />
-            </div>
+            </CardBody>
         </CardContainer>
     )
 }

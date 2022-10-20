@@ -21,6 +21,7 @@ const theme = {
     border: '#f052ca'
   },
   mobile: '768px',
+  xsMobile: '554px'
 
 }
 
